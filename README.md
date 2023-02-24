@@ -12,6 +12,8 @@ En este estudio vamos a ver cuántos de los productos que ofrecen tienen un desc
 
 Indicar que dado que no se dispone de la información real sobre el número de usuarios que tiene la página web y las compras reales que se han realizado, se supondrá que sólo realizan compras los usuarios que han comentado y que además el 100% de las compras realizadas son las comentadas.
 
+Si se dispusiera de esta información, podríamos valorar el ratio de personas que emiten comentarios sobre los compradores reales para ver así cómo de activos son los usuarios de la página  web.
+
 Finalmente se hará un estudio sobre las valoraciones de los usuarios de los productos en relación con sus aportaciones a la página. Esta valoración se realizará con metodología de NLP.
 
 ---
@@ -27,5 +29,5 @@ Previamente, generaremos una nueva variable donde agregar diversos #tags y agrup
 
 Con esta nueva variable y otras existentes haremos predicción de gustos de los usuarios.
 
-Un una última fase, se hará un estudio sobre la calidad de los productos en función de las valoraciones de los usuarios existentes y ver si se puede utilizar en una última fase para mejorar los procesos de recomendaciones de los usuarios.
+En una última fase, se hará un estudio sobre la calidad de los productos en función de las valoraciones de los usuarios existentes y ver si se puede utilizar en una última fase para mejorar los procesos de recomendaciones de los usuarios.
 
