@@ -14,20 +14,18 @@ Indicar que dado que no se dispone de la información real sobre el número de u
 
 Si se dispusiera de esta información, podríamos valorar el ratio de personas que emiten comentarios sobre los compradores reales para ver así cómo de activos son los usuarios de la página  web.
 
-Finalmente se hará un estudio sobre las valoraciones de los usuarios de los productos en relación con sus aportaciones a la página. Esta valoración se realizará con metodología de NLP.
+Finalmente se hará un estudio sobre las valoraciones de los usuarios de los productos en relación con sus aportaciones a la página. Esta valoración se realizará con metodología de NLP y detección de polaridad.
 
 ---
 ## Metodología:
 
 En una primera parte se realizará un proceso de recopilación de la información de cada uno de los productos existentes.
 
-En una segunda parte se utilizarán las librerías de numpy, pandas, matplolib y seaborn de Python para el tratamiento de los datos y visualización de los mismos.
+En este punto utilizaremos *BeautifulSoup*, *Regex* y *NLP* para la obtención de los datos y generación de nuevas variables. 
 
-En una tercera parte se utilizará la librería de Sklearn para realizar modelado de los datos. 
+En una segunda parte se utilizarán las librerías de *numpy*, *pandas*, *matplolib* y *seaborn* de Python para el tratamiento de los datos y visualización de los mismos.
 
-Previamente, generaremos una nueva variable donde agregar diversos #tags y agrupar con ellos los diversos productos en grandes grupos.
-
-Con esta nueva variable y otras existentes haremos predicción de gustos de los usuarios.
+En una tercera parte se utilizará la librería de *Sklearn* para realizar modelado de los datos. 
 
 En una última fase, se hará un estudio sobre la calidad de los productos en función de las valoraciones de los usuarios existentes y ver si se puede utilizar en una última fase para mejorar los procesos de recomendaciones de los usuarios.
 
