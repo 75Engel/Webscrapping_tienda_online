@@ -4,17 +4,28 @@ Proyecto para el estudio de una tienda online, donde se realizará una obtenció
 ---
 ## Descripción del proyecto:
 
-Se realizará una toma de datos existentes en una página web de una tienda online, mediante Webscrapping, obteniendo la información relevante del producto, precio sin rebajar y precio rebajado, datos de los diversos usuarios que han comentado sobre las compras realizadas de cada producto y su valoración.
+1.- Se realizará una toma de datos existentes en una página web de una tienda online, mediante Webscrapping, obteniendo la información relevante del producto, precio sin rebajar y precio rebajado, datos de los diversos usuarios que han comentado sobre las compras realizadas de cada producto y su valoración.
 
-Posteriormente se realizará un estudio, que queda por definir en una primera parte, sobre los productos existentes.
+2.- Posteriormente se realizará un estudio, que queda por definir en una primera parte, sobre los productos existentes. 
 
-En este estudio vamos a ver cuántos de los productos que ofrecen tienen un descuento y se realizará un estudio para agregar un campo nuevo a los mismos que definan a los mismos y poder así hacer predicciones en relación con los gustos/compras anteriores de los usuarios que han comentado.
+Para este estudio generaremos nuevas *features* en función de la descripción del producto.
 
-Indicar que dado que no se dispone de la información real sobre el número de usuarios que tiene la página web y las compras reales que se han realizado, se supondrá que sólo realizan compras los usuarios que han comentado y que además el 100% de las compras realizadas son las comentadas.
+En este estudio vamos a ver:
+   - tipología de los productos que tienen un descuento,
+   - cuántos comentarios tienen cada producto, por año, por día de la semana, por meses,
+   - valoración de los productos por parte de los usuarios,
+   - tipología de productos con más comentarios,
+
+3.- Finalmente, procederemos a realizar un modelado para predecir intereses de los usuarios en función de sus comentarios.
+
+Indicar que dado que no se dispone de la información real sobre el número de usuarios que tiene la página web y las compras reales que se han realizado, se supondrá que sólo realizan compras los usuarios que han comentado y que además el 100% de las compras realizadas son las comentadas. 
+
+Tendremos en cuenta que hay varios nombres de usuarios que se repiten, por lo que intentaremos discriminar de algún modo para poder asignar usuarios distintos en caso de que haya nombres repetidos dentro de un mismo producto, modificando el nombre del mismo.
+
+Esto es importante de valorar, dado que no disponemos de la información interna de la tienda de la que vamos a obtener los datos.
 
 Si se dispusiera de esta información, podríamos valorar el ratio de personas que emiten comentarios sobre los compradores reales para ver así cómo de activos son los usuarios de la página  web.
 
-Finalmente se hará un estudio sobre las valoraciones de los usuarios de los productos en relación con sus aportaciones a la página. Esta valoración se realizará con metodología de NLP y detección de polaridad.
 
 ---
 ## Metodología:
@@ -23,9 +34,8 @@ En una primera parte se realizará un proceso de recopilación de la informació
 
 En este punto utilizaremos *BeautifulSoup*, *Regex* y *NLP* para la obtención de los datos y generación de nuevas variables. 
 
-En una segunda parte se utilizarán las librerías de *numpy*, *pandas*, *matplolib* y *seaborn* de Python para el tratamiento de los datos y visualización de los mismos.
+En una segunda parte se creará una *BBDD* a través de la cual se realizarán las consultas necesarias para realizar el tratamiento de los datos y su visualización.
+
+En este sentido, se utilizará un *Estudio Exploratorio de Datos* (EDA) usando las librerías de *numpy*, *pandas*, *matplolib* y *seaborn* de Python y se utilizará *PowerBI* para la creación de *Dashboards* interactivos de los KPIs más interesantes para tener una visión de la evolución de la página web.
 
 En una tercera parte se utilizará la librería de *Sklearn* para realizar modelado de los datos. 
-
-En una última fase, se hará un estudio sobre la calidad de los productos en función de las valoraciones de los usuarios existentes y ver si se puede utilizar en una última fase para mejorar los procesos de recomendaciones de los usuarios.
-
