@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <DashboardGridOverlay />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='productos+' inline='true' name='federated.0rz284l07m2pmg12nyhly04sl8ls' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='productos' name='textscan.04v9aw11qsgr0c17ws8b70rav1dr'>
+            <connection class='textscan' directory='D:/Data_science/Javier/Repositorios/Proyecto_tienda_online/Data' filename='productos.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04v9aw11qsgr0c17ws8b70rav1dr' name='comentarios.csv' table='[comentarios#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='date' date-parse-format='&apos;mi&apos;é&apos;rcoles&apos; MM &apos;enero&apos;, yyyy|#|#|&apos;viernes&apos; MMdd &apos;marzo&apos;, yyyy|#|#|&apos;mi&apos;é&apos;rcoles&apos; dd MMM&apos;io&apos;, yyyy|#|#|&apos;domingo&apos; MM &apos;noviembre&apos;, yyyy|#|#|MMM&apos;tes&apos; dd &apos;noviembre&apos;, yyyy' name='DATE' ordinal='1' />
+            <column datatype='integer' name='RATIO' ordinal='2' />
+            <column datatype='string' name='USERS' ordinal='3' />
+            <column datatype='string' name='COMMENT' ordinal='4' />
+            <column datatype='integer' name='DAY' ordinal='5' />
+            <column datatype='integer' name='MONTH' ordinal='6' />
+            <column datatype='integer' name='YEAR' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.04v9aw11qsgr0c17ws8b70rav1dr' name='productos.csv' table='[productos#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_ES'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='PRODUCT' ordinal='1' />
+              <column datatype='string' name='SLOGAN' ordinal='2' />
+              <column datatype='string' name='DESCRIPTION' ordinal='3' />
+              <column datatype='string' name='CHARACTERISTICS' ordinal='4' />
+              <column datatype='string' name='LISTA_URL' ordinal='5' />
+              <column datatype='string' name='REGULAR_PRICE' ordinal='6' />
+              <column datatype='string' name='DISCOUNT_PRICE' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.04v9aw11qsgr0c17ws8b70rav1dr' name='comentarios.csv' table='[comentarios#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_ES'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='date' date-parse-format='&apos;mi&apos;é&apos;rcoles&apos; MM &apos;enero&apos;, yyyy|#|#|&apos;viernes&apos; MMdd &apos;marzo&apos;, yyyy|#|#|&apos;mi&apos;é&apos;rcoles&apos; dd MMM&apos;io&apos;, yyyy|#|#|&apos;domingo&apos; MM &apos;noviembre&apos;, yyyy|#|#|MMM&apos;tes&apos; dd &apos;noviembre&apos;, yyyy' name='DATE' ordinal='1' />
+              <column datatype='integer' name='RATIO' ordinal='2' />
+              <column datatype='string' name='USERS' ordinal='3' />
+              <column datatype='string' name='COMMENT' ordinal='4' />
+              <column datatype='integer' name='DAY' ordinal='5' />
+              <column datatype='integer' name='MONTH' ordinal='6' />
+              <column datatype='integer' name='YEAR' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CHARACTERISTICS]' value='[productos.csv].[CHARACTERISTICS]' />
+          <map key='[COMMENT]' value='[comentarios.csv].[COMMENT]' />
+          <map key='[DATE]' value='[comentarios.csv].[DATE]' />
+          <map key='[DAY]' value='[comentarios.csv].[DAY]' />
+          <map key='[DESCRIPTION]' value='[productos.csv].[DESCRIPTION]' />
+          <map key='[DISCOUNT_PRICE]' value='[productos.csv].[DISCOUNT_PRICE]' />
+          <map key='[ID (comentarios.csv)]' value='[comentarios.csv].[ID]' />
+          <map key='[ID]' value='[productos.csv].[ID]' />
+          <map key='[LISTA_URL]' value='[productos.csv].[LISTA_URL]' />
+          <map key='[MONTH]' value='[comentarios.csv].[MONTH]' />
+          <map key='[PRODUCT]' value='[productos.csv].[PRODUCT]' />
+          <map key='[RATIO]' value='[comentarios.csv].[RATIO]' />
+          <map key='[REGULAR_PRICE]' value='[productos.csv].[REGULAR_PRICE]' />
+          <map key='[SLOGAN]' value='[productos.csv].[SLOGAN]' />
+          <map key='[USERS]' value='[comentarios.csv].[USERS]' />
+          <map key='[YEAR]' value='[comentarios.csv].[YEAR]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRODUCT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>PRODUCT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLOGAN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SLOGAN]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>SLOGAN</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DESCRIPTION]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>DESCRIPTION</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHARACTERISTICS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CHARACTERISTICS]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>CHARACTERISTICS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LISTA_URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LISTA_URL]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>LISTA_URL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGULAR_PRICE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REGULAR_PRICE]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>REGULAR_PRICE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISCOUNT_PRICE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DISCOUNT_PRICE]</local-name>
+            <parent-name>[productos.csv]</parent-name>
+            <remote-alias>DISCOUNT_PRICE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (comentarios.csv)]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DATE]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RATIO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RATIO]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>RATIO</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USERS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[USERS]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>USERS</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COMMENT]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>COMMENT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAY]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>DAY</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MONTH]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>MONTH</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[comentarios.csv]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Characteristics' datatype='string' name='[CHARACTERISTICS]' role='dimension' type='nominal' />
+      <column caption='Comment' datatype='string' name='[COMMENT]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[DESCRIPTION]' role='dimension' type='nominal' />
+      <column caption='Discount Price' datatype='string' name='[DISCOUNT_PRICE]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID (comentarios.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Lista Url' datatype='string' name='[LISTA_URL]' role='dimension' type='nominal' />
+      <column caption='Product' datatype='string' name='[PRODUCT]' role='dimension' type='nominal' />
+      <column caption='Ratio' datatype='integer' name='[RATIO]' role='measure' type='quantitative' />
+      <column caption='Regular Price' datatype='string' name='[REGULAR_PRICE]' role='dimension' type='nominal' />
+      <column caption='Slogan' datatype='string' name='[SLOGAN]' role='dimension' type='nominal' />
+      <column caption='Users' datatype='string' name='[USERS]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='comentarios.csv' datatype='table' name='[__tableau_internal_object_id__].[comentarios.csv_14DCF07416D74B81A000D04B77BE39BB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='productos.csv' datatype='table' name='[__tableau_internal_object_id__].[productos.csv_35CD9AB1B311404F9CEA06250AB8C7D8]' role='measure' type='quantitative' />
+      <group caption='Acción (Product)' hidden='true' name='[Action (Product)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[PRODUCT]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='comentarios.csv' id='comentarios.csv_14DCF07416D74B81A000D04B77BE39BB'>
+            <properties context=''>
+              <relation connection='textscan.04v9aw11qsgr0c17ws8b70rav1dr' name='comentarios.csv' table='[comentarios#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='date' date-parse-format='&apos;mi&apos;é&apos;rcoles&apos; MM &apos;enero&apos;, yyyy|#|#|&apos;viernes&apos; MMdd &apos;marzo&apos;, yyyy|#|#|&apos;mi&apos;é&apos;rcoles&apos; dd MMM&apos;io&apos;, yyyy|#|#|&apos;domingo&apos; MM &apos;noviembre&apos;, yyyy|#|#|MMM&apos;tes&apos; dd &apos;noviembre&apos;, yyyy' name='DATE' ordinal='1' />
+                  <column datatype='integer' name='RATIO' ordinal='2' />
+                  <column datatype='string' name='USERS' ordinal='3' />
+                  <column datatype='string' name='COMMENT' ordinal='4' />
+                  <column datatype='integer' name='DAY' ordinal='5' />
+                  <column datatype='integer' name='MONTH' ordinal='6' />
+                  <column datatype='integer' name='YEAR' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='productos.csv' id='productos.csv_35CD9AB1B311404F9CEA06250AB8C7D8'>
+            <properties context=''>
+              <relation connection='textscan.04v9aw11qsgr0c17ws8b70rav1dr' name='productos.csv' table='[productos#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='PRODUCT' ordinal='1' />
+                  <column datatype='string' name='SLOGAN' ordinal='2' />
+                  <column datatype='string' name='DESCRIPTION' ordinal='3' />
+                  <column datatype='string' name='CHARACTERISTICS' ordinal='4' />
+                  <column datatype='string' name='LISTA_URL' ordinal='5' />
+                  <column datatype='string' name='REGULAR_PRICE' ordinal='6' />
+                  <column datatype='string' name='DISCOUNT_PRICE' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[ID]' />
+              <expression op='[ID (comentarios.csv)]' />
+            </expression>
+            <first-end-point object-id='productos.csv_35CD9AB1B311404F9CEA06250AB8C7D8' />
+            <second-end-point object-id='comentarios.csv_14DCF07416D74B81A000D04B77BE39BB' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+      <datasources>
+        <datasource caption='productos+' name='federated.0rz284l07m2pmg12nyhly04sl8ls' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+        <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+        <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]' included-values='in-range'>
+        <min>2005</min>
+        <max>2023</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filtro 1 (generado)' name='[Action1_590D95E534B94697BD3F37131EECC697]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='mas_comentados' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>COMENTARIOS POR PRODUCTO</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='productos+' name='federated.0rz284l07m2pmg12nyhly04sl8ls' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+            <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+            <column caption='Product' datatype='string' name='[PRODUCT]' role='dimension' type='nominal' />
+            <column caption='Users' datatype='string' name='[USERS]' role='dimension' type='nominal' />
+            <column-instance column='[USERS]' derivation='Count' name='[cnt:USERS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PRODUCT]' derivation='None' name='[none:PRODUCT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]' direction='DESC' using='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' />
+          <slices>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' scope='cols' value='nº comentarios' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]</rows>
+        <cols>[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]</cols>
+      </table>
+      <simple-id uuid='{9FAE31DC-44CF-4EA9-8D9E-709076D16F07}' />
+    </worksheet>
+    <worksheet name='mas_comentados'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>10 PRODUCTOS MÁS COMENTADOS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='productos+' name='federated.0rz284l07m2pmg12nyhly04sl8ls' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+            <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+            <column caption='Product' datatype='string' name='[PRODUCT]' role='dimension' type='nominal' />
+            <column caption='Users' datatype='string' name='[USERS]' role='dimension' type='nominal' />
+            <column-instance column='[USERS]' derivation='Count' name='[cnt:USERS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PRODUCT]' derivation='None' name='[none:PRODUCT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([USERS])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:PRODUCT:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]' direction='DESC' using='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' />
+          <slices>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]</column>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' scope='cols' value='nº comentarios' />
+            <encoding attr='space' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' field-type='quantitative' major-origin='0' major-spacing='50' max='597' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='height' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' value='107' />
+            <format attr='auto-subtitle' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' scope='cols' value='true' />
+            <format attr='display' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]' value='40' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]' value='Fechas'>
+              <formatted-text>
+                <run>Fechas</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]</rows>
+        <cols>[federated.0rz284l07m2pmg12nyhly04sl8ls].[cnt:USERS:qk]</cols>
+      </table>
+      <simple-id uuid='{4F459DC1-D34B-47BB-A434-7F0FCEA18053}' />
+    </worksheet>
+    <worksheet name='menor_valoracion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>PRODUCTOS CON VALORACIÓN INFERIOR A 3</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='productos+' name='federated.0rz284l07m2pmg12nyhly04sl8ls' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+            <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+            <column caption='Product' datatype='string' name='[PRODUCT]' role='dimension' type='nominal' />
+            <column caption='Ratio' datatype='integer' name='[RATIO]' role='measure' type='quantitative' />
+            <column-instance column='[RATIO]' derivation='Avg' name='[avg:RATIO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PRODUCT]' derivation='None' name='[none:PRODUCT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[Action (Product)]'>
+            <groupfilter function='level-members' level='[PRODUCT]' user:ui-action-filter='[Action1_590D95E534B94697BD3F37131EECC697]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' included-values='in-range'>
+            <min>1.0</min>
+            <max>3.0</max>
+          </filter>
+          <computed-sort column='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]' direction='ASC' using='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' />
+          <slices>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]</column>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]</column>
+            <column>[federated.0rz284l07m2pmg12nyhly04sl8ls].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.5' max='5.0' min='0.0' minor-origin='0.0' minor-show='false' minor-spacing='0.5' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' scope='cols' value='Valoración' />
+            <format attr='height' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' value='44' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]' value='21' />
+            <format attr='text-format' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.076464056968689' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rz284l07m2pmg12nyhly04sl8ls].[none:PRODUCT:nk]</rows>
+        <cols>[federated.0rz284l07m2pmg12nyhly04sl8ls].[avg:RATIO:qk]</cols>
+      </table>
+      <simple-id uuid='{211BE78A-9415-4F71-9152-2CD933D1968F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='productos+' name='federated.0rz284l07m2pmg12nyhly04sl8ls' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0rz284l07m2pmg12nyhly04sl8ls'>
+        <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+        <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='42250' id='5' name='menor_valoracion' w='53200' x='1500' y='57000' />
+        <zone h='61375' id='3' name='mas_comentados' w='87400' x='2100' y='8250' />
+        <zone h='8250' id='7' name='mas_comentados' param='[federated.0rz284l07m2pmg12nyhly04sl8ls].[yr:DATE:qk]' type-v2='filter' values='database' w='22100' x='75400' y='2250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1F891FFA-3E67-4A7D-A1E5-EF2D634A3751}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78F401E4-769B-48A1-8BA1-8870B0778DBD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='mas_comentados'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3B08F883-35EC-4245-A23D-EA7F87C51210}' />
+    </window>
+    <window class='worksheet' name='menor_valoracion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FAAA51CD-0339-4FE2-AF09-C563409A09F4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='mas_comentados' />
+        <viewpoint name='menor_valoracion' />
+      </viewpoints>
+      <active id='3' />
+      <grid grid-overlay-mode='on' />
+      <simple-id uuid='{415FF8C7-7EAC-4781-8DAB-5AC1AE1B890F}' />
+    </window>
+  </windows>
+</workbook>
