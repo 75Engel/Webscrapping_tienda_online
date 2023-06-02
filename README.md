@@ -1,6 +1,7 @@
 # Proyecto_tienda_online
-Proyecto para el estudio de una tienda online, donde se realizará una obtención de datos (Webscrapping), análisis de la información existente y predicción de sugerencias
+Proyecto para el estudio de una tienda online, donde se realizará una obtención de datos (Webscrapping), análisis de la información existente y predicción de sugerencias.
 
+    En este repositorio dejaremos el procedimiento para la obtención de datos y el tratamiento realizado de los datos para estructurar la información de un modo que podamos tratarla posteriormente. 
 ---
 ## Descripción del proyecto:
 
@@ -22,7 +23,7 @@ Indicar que dado que no se dispone de la información real sobre el número de u
 
 Tendremos en cuenta que hay varios nombres de usuarios que se repiten, por lo que intentaremos discriminar de algún modo para poder asignar usuarios distintos en caso de que haya nombres repetidos dentro de un mismo producto, modificando el nombre del mismo.
 
-Esto es importante de valorar, dado que no disponemos de la información interna de la tienda de la que vamos a obtener los datos.
+    Esto es importante de valorar, dado que no disponemos de la información interna de la tienda de la que vamos a obtener los datos y tendremos que realizar diversas suposiciones, que dejaremos indicadas en cada momento.
 
 Si se dispusiera de esta información, podríamos valorar el ratio de personas que emiten comentarios sobre los compradores reales para ver así cómo de activos son los usuarios de la página  web.
 
@@ -36,6 +37,3 @@ En este punto utilizaremos *BeautifulSoup*, *Regex* y *NLP* para la obtención d
 
 En una segunda parte se creará una *BBDD* a través de la cual se realizarán las consultas necesarias para realizar el tratamiento de los datos y su visualización.
 
-En este sentido, se utilizará un *Estudio Exploratorio de Datos* (EDA) usando las librerías de *numpy*, *pandas*, *matplolib* y *seaborn* de Python y se utilizará *PowerBI* para la creación de *Dashboards* interactivos de los KPIs más interesantes para tener una visión de la evolución de la página web.
-
-En una tercera parte se utilizará la librería de *Sklearn* para realizar modelado de los datos. 
